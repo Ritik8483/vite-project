@@ -917,7 +917,6 @@ const Tables = () => {
     fetchData();
   }, []);
 
-  console.log("battleData", battleData);
 
   
   const content:any = `<div>
