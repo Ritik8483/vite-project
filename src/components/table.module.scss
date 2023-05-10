@@ -1,0 +1,502 @@
+@import url('https://use.fontawesome.com/releases/v5.13.0/css/all.css');
+.customTableData {
+  border: none !important;
+  // border-collapse: collapse;
+  padding: 7px 15px !important;
+  white-space: nowrap;
+  font-size: 1rem !important;
+  font-family: var(--barlow);
+  color: var(--primary-black);
+}
+
+.default {
+  cursor: default;
+}
+
+.tableDataDesc {
+  text-overflow: ellipsis !important;
+  width: 10px !important;
+  overflow: hidden !important;
+  white-space: nowrap;
+}
+.companyRequest {
+  background-color: var(--primary-white);
+  box-shadow: 0px 5px 8px 2px rgba(0, 0, 0, 0.04);
+  border-radius: 5px;
+}
+.customTableHeading {
+  position: relative;
+  font-size: 1rem !important;
+  align-items: center;
+  cursor: pointer;
+  padding: 10px;
+  padding-left: 15px !important;
+  padding-right: 60px !important;
+  white-space: nowrap;
+  color: var(--primary-black);
+  background-color: white !important;
+  margin: 1px;
+  // border-right: 1px solid gray !important;
+}
+
+.customTableIntelHeading {
+  position: relative;
+  font-size: 1rem !important;
+  align-items: center;
+  cursor: pointer;
+  padding: 10px auto;
+  padding-left: 10px !important;
+  padding-right: 60px !important;
+  padding-bottom: 8px !important;
+  padding-top: 24px !important;
+  white-space: nowrap;
+  color: var(--primary-black);
+}
+
+.disable {
+  cursor: not-allowed;
+}
+
+.customTableHeading[data-toggle='true']::after {
+  opacity: 0.2;
+  content: '\f884';
+  font-family: 'Font Awesome 5 Free';
+  position: absolute;
+  right: 0;
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 0;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.customTableHeading[data-toggle='false']::after {
+  opacity: 0.2;
+  content: '\f160';
+  font-family: 'Font Awesome 5 Free';
+  position: absolute;
+  right: 0;
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 0;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.customTableHeadingForAll {
+  position: relative;
+  font-size: 1rem !important;
+  align-items: center;
+  cursor: pointer;
+  padding: 10px;
+  padding-left: 15px !important;
+  padding-right: 60px !important;
+  white-space: nowrap;
+  color: var(--primary-black);
+  background-color: white !important;
+  margin: 1px;
+}
+.customTableIntelHeading[data-toggle='true']::after {
+  opacity: 0.2;
+  content: '\f884';
+  font-family: 'Font Awesome 5 Free';
+  position: absolute;
+  right: 0;
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 0;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.customTableIntelHeading[data-toggle='false']::after {
+  opacity: 0.2;
+  content: '\f160';
+  font-family: 'Font Awesome 5 Free';
+  position: absolute;
+  right: 0;
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 0;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.headingTitle {
+  font-size: 26px;
+  font-family: 'Roboto Slab';
+  color: var(--primary-black);
+  font-family: '$robo-semibold';
+}
+@media (max-width: 700px) {
+  .responsiveSearchBar {
+    display: flex;
+    flex-direction: column;
+    align-items: start !important;
+    justify-content: flex-start !important;
+    padding: 0;
+  }
+  .paginate {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+  .tabsPaginate {
+    display: flex;
+    justify-content: flex-start !important;
+  }
+  .showing {
+    padding: 0 !important;
+    margin-left: 4px;
+  }
+  .response {
+    flex-direction: column !important;
+  }
+  .page {
+    padding: 0;
+  }
+}
+.tabsPaginate {
+  display: flex;
+  justify-content: end;
+  margin-top: 25px;
+}
+.response {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.headerSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.outlineBtn {
+  margin: 0;
+  padding: 0 !important;
+  cursor: pointer;
+}
+.modalBtns {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  padding-top: 10px !important;
+}
+@media (max-width: 700px) {
+  .responsiveSearchBar {
+    display: flex;
+    flex-direction: column;
+    align-items: start !important;
+    justify-content: flex-start !important;
+    padding: 0;
+  }
+  .paginate {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+  .tabsPaginate {
+    display: flex;
+    justify-content: flex-start !important;
+  }
+  .showing {
+    text-align: left;
+    margin-left: 16px;
+  }
+  .headerSection {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .AddCompanyBox {
+    margin-left: 6px;
+  }
+}
+.AddCompanyBox {
+  padding-right: 5px;
+}
+.tabsPaginate {
+  display: flex;
+  justify-content: end;
+}
+.showing {
+  color: var(--primary-black) !important;
+  font-size: 14px;
+  font-family: var(--barlow);
+}
+.emloyeeShadow {
+  box-shadow: none !important;
+}
+.adjustDropdown {
+  margin-top: -8px !important;
+  padding: 10px !important;
+  width: 50px !important;
+  box-sizing: border-box !important;
+}
+.dropItem {
+  font-size: 16px;
+  padding: 3px 6px !important;
+  height: auto;
+  border-radius: 5px;
+  text-align: start;
+  display: flex !important;
+  margin: 0;
+  align-items: center !important;
+}
+.dropItem:hover,
+.dropItem:focus {
+  background-color: var(--primary-dropdown) !important;
+}
+.closeIcon {
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--primary-black);
+  border-radius: 5px;
+  top: -40px;
+  color: var(--primary-white);
+  cursor: pointer;
+  z-index: 3;
+  right: 0px;
+}
+.tagsItem {
+  padding: 7px;
+  background-color: rgba(255, 188, 157, 0.2);
+  font-family: var(--barlow);
+  font-size: 1rem;
+  border-radius: 20px;
+  gap: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 2px;
+}
+
+.changePasswordContainer {
+  position: relative;
+  border-radius: 3px;
+  background: var(--primary-white);
+  border-top: 3px solid #d2d6de;
+  width: 100%;
+  padding: 20px 20px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+.changePasswordContainer.primary {
+  border-top-color: var(--primary-color);
+}
+.changePassBtn {
+  display: flex;
+  justify-content: flex-end;
+}
+.employeeThreeDots {
+  cursor: no-drop !important;
+}
+.errorFontFamily {
+  font-family: var(--barlow);
+}
+.downloadMatrixBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  width: 100%;
+}
+.matrixProductBox {
+  font-family: var(--barlow);
+  margin-top: 10px;
+}
+.competitiveFeatureBox {
+  margin-top: 20px;
+  display: flex;
+  width: 100%;
+  gap: 20px;
+  align-items: center;
+}
+.matrixProductBox .productInput:focus {
+  border: 2px solid #f8763a !important;
+}
+.matrixTitle {
+  text-align: center;
+  margin-top: 12px;
+  font-family: var(--barlow);
+}
+.noteTextTd {
+  // height: 50px !important;
+  // line-height: 30px !important;
+  white-space: nowrap;
+}
+.matrixTable {
+  border-collapse: collapse;
+  border: 1px solid black;
+  width: 100%;
+  th,
+  td {
+    text-align: left;
+    padding: 8px;
+    //     max-height: 50px !important;
+    //     line-height: 50px !important;
+    // overflow: hidden;
+  }
+  tr {
+    width: 100px;
+    border: 1px solid black;
+  }
+  td {
+    border-right: 1px solid black;
+  }
+  th {
+    text-align: center;
+    border-bottom: 1px solid black;
+    width: 180px;
+    // white-space: nowrap;
+    // overflow: hidden;
+    // text-overflow: ellipsis;
+    // max-width: 100px;
+  }
+  th:nth-child(1) {
+    text-align: start;
+    width: 200px;
+    border-bottom: 1px solid black;
+  }
+}
+.bottomColorContainer {
+  display: flex;
+  justify-content: center;
+  // margin-top: 20px;
+  align-items: center;
+  gap: 20px;
+  .bottomColorBox {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    p {
+      font-family: var(--barlow);
+      font-weight: 600;
+      font-size: 14px;
+      margin: 0;
+    }
+  }
+}
+.featuresTdBox {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 180px;
+}
+.colorBoxBottomFirst {
+  background-color: lightgreen;
+  height: 30px;
+  width: 80px;
+  cursor: pointer;
+}
+.colorBoxBottomSecond {
+  background-color: yellow;
+  height: 30px;
+  width: 80px;
+  cursor: pointer;
+}
+.colorBoxBottomThird {
+  background-color: brown;
+  height: 30px;
+  width: 80px;
+  cursor: pointer;
+}
+.tbody td {
+  background-color: #fff;
+}
+.contextContainer {
+  z-index: 1;
+  width: 100%;
+}
+.rightClick {
+  z-index: 12;
+  position: fixed;
+  background: rgb(240, 200, 1);
+}
+.menuElement {
+  color: #222222;
+  cursor: pointer;
+  padding: 17px 36px;
+}
+.menuElement:hover {
+  color: #fff;
+  background: #009688;
+}
+.rcmHeading {
+  text-align: center;
+  font-size: 18px;
+  font-family: var(--barlow);
+  font-weight: 800;
+}
+.productName {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--barlow);
+  gap: 3px;
+  p {
+    font-size: 16px;
+  }
+}
+.activeBattleCardContainer {
+  height: calc(100vh - 300px);
+  overflow-y: auto;
+  width: 100%;
+  background: #faf8f6;
+  margin-top: 30px;
+  .activeBattleTitle {
+    font-family: var(--barlows);
+    font-size: 18px;
+    margin-left: 8px;
+    padding-top: 8px;
+  }
+}
+.addIconBattleCard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.addIconBattleCardContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 120px;
+}
+.checkboxesContainer {
+  display: flex;
+  justify-content: space-between;
+  // align-items: center;
+}
+.formLabelText {
+  font-family: var(--barlow);
+}
+.dragInputTextContainer {
+  border: 1px solid black;
+  padding: 2px 4px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  position: relative;
+  height: 130px;
+  width: 100%;
+  background-color: white;
+  cursor: move;
+}
+.battleCardHeading{
+  text-align: center;
+  font-family: var(--barlow);
+  font-weight: 700;
+  font-size: 15px;
+  text-decoration: underline;
+}
+.battleEmployeeContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}

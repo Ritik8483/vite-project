@@ -1,0 +1,44 @@
+@font-face {
+  font-family: "mulish";
+  src: url("../src/assets/fonts/Mulish-Medium.ttf");
+}
+.firstTwoBtns,
+.lastTwoButtons {
+  display: flex;
+  gap: 15px;
+  margin: 15px;
+  width: 100%;
+}
+.addIntelBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 150px;
+  border-radius: 8px;
+  border: 2px solid orange;
+  cursor: pointer;
+  color: orange;
+  font-size: 16px;
+  font-family: var(--barlow);
+  background-color: transparent;
+}
+.draggableChip {
+  cursor: pointer;
+  height: 32px;
+  width: 76px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: orange;
+}
+.pageDrop {
+  height: 50px;
+  width: 200px;
+  background-color: aqua;
+  overflow-y: auto;
+}
+.addIntelBtn:hover{
+  background-color: brown !important;
+}
